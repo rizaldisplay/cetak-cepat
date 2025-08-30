@@ -9,7 +9,7 @@ function About() {
         <section id="tentang" className="py-20 bg-white">
             <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
                 <div className="md:w-1/2">
-                    <Image src={image1} alt="Tim CetakCepat" className="rounded-lg shadow-xl w-full" width={600} height={400} />
+                    <Image src="/images/my_tim.png" alt="Tim CetakCepat" className="rounded-lg shadow-xl w-full" width={600} height={600} />
                 </div>
                 <div className="md:w-1/2">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Kenapa Memilih Kami?</h2>

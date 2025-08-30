@@ -3,13 +3,27 @@ import React from "react";
 const Hero = () => {
   return (
     <div>
-      {/* <!-- Hero Section --> */}
-      <section className="bg-white">
-        <div className="container mx-auto px-6 py-20 md:py-32 text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+      {/* */}
+      <section className="relative flex items-center justify-center h-screen overflow-hidden">
+        {/* Video Background */}
+        <video
+          src="/videos/0830.mp4" // Ganti dengan path video Anda
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+        ></video>
+
+        {/* Overlay for better text readability */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-20"></div>
+
+        {/* Hero Content */}
+        <div className="relative z-30 container mx-auto px-6 py-20 md:py-32 text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
             Solusi Cetak Cepat & Berkualitas
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
             Dari kartu nama hingga spanduk raksasa, kami siap wujudkan semua
             kebutuhan cetak Anda dengan hasil profesional dan harga terbaik.
           </p>

@@ -1,11 +1,13 @@
 import React from "react";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-blue-600">
-          <i className="fas fa-print"></i> CetakCepat
+        <a href="#" className="text-2xl font-bold text-blue-600 flex items-center gap-2">
+          <Image src="/images/logo.png" alt="Guntur Digital Print Logo" width={50} height={50} />
+          <span>Guntur</span> <span className="text-gray-600 font-normal">Digital Print</span>
         </a>
         <div className="hidden md:flex space-x-6 items-center">
           <a
